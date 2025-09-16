@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.sign_up.SignUpActivity">
+
+    <ImageView
+        android:id="@+id/imgBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-25dp"
+        android:layout_marginEnd="-35dp"
+        android:src="@drawable/bg_image" />
+
+    <TextView
+        android:id="@+id/txtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgBackground"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:fontFamily="@font/roboto_black"
+        android:text="@string/signup"
+        android:textAllCaps="true"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txtLoginMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtLogin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:fontFamily="@font/roboto_black"
+        android:text="@string/sign_up_to_continue"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtLoginMessage">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_50sdp">
+
+
+                <EditText
+                    android:id="@+id/edtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:hint="@string/name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:selectAllOnFocus="true" />
+
+                <EditText
+                    android:id="@+id/edtPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edtName"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:hint="@string/phone"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:selectAllOnFocus="true" />
+
+                <EditText
+                    android:id="@+id/edtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edtPhone"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:hint="@string/prompt_email"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:selectAllOnFocus="true" />
+
+                <EditText
+                    android:id="@+id/edtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edtEmail"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:hint="@string/prompt_password"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:selectAllOnFocus="true" />
+
+                <EditText
+                    android:id="@+id/edtConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edtPassword"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:hint="@string/confirm_password"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:selectAllOnFocus="true" />
+
+                <EditText
+                    android:id="@+id/edtCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edtConfirmPassword"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:hint="@string/city"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:selectAllOnFocus="true" />
+
+                <Spinner
+                    android:id="@+id/edtTShirtSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@id/edtCity"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:hint="@string/t_shirt_size"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:selectAllOnFocus="true" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/edtTShirtSize"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:background="@color/gray"
+                    android:paddingStart="2dp"
+                    android:paddingEnd="2dp" />
+
+                <Spinner
+                    android:id="@+id/edtGovtId"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@id/edtTShirtSize"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:hint="@string/govt_id"
+                    android:imeOptions="actionDone"
+                    android:inputType="textEmailAddress"
+                    android:selectAllOnFocus="true" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/edtGovtId"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:background="@color/gray"
+                    android:paddingStart="2dp"
+                    android:paddingEnd="2dp" />
+
+                <TextView
+                    android:id="@+id/uploadFile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edtGovtId"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center_vertical"
+                    android:text="Upload Document"
+                    android:textSize="15sp"
+                    app:drawableEndCompat="@drawable/ic_upload_file" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/uploadFile"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/chkBxkTermAndConditions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="?android:textColorPrimary"
+                        android:text="@string/agree" />
+
+                    <TextView
+                        android:id="@+id/txtTermsAndConditions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/chkBxkTermAndConditions"
+                        android:paddingStart="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingEnd="5dp"
+                        android:textColor="@color/purple_700"
+                        android:text="@string/terms_conditions"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/txtAnd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/txtTermsAndConditions"
+                        android:paddingStart="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingEnd="5dp"
+                        android:textColor="?android:textColorPrimary"
+                        android:text="@string/and"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/txtPrivacyPolicy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/txtAnd"
+                        android:paddingStart="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textColor="@color/purple_700"
+                        android:paddingEnd="5dp"
+                        android:text="@string/privacy_policy"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/imgGovtId"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_below="@id/uploadFile"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/baby1"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="start"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:background="@drawable/button_bg"
+        android:elevation="10dp"
+        android:fontFamily="@font/roboto_black"
+        android:paddingStart="@dimen/button_horizontal_padding"
+        android:paddingTop="@dimen/button_vertical_padding"
+        android:paddingEnd="@dimen/button_horizontal_padding"
+        android:paddingBottom="@dimen/button_vertical_padding"
+        android:text="@string/signup"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtHaveAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_black"
+            android:text="@string/already_have_account"
+            android:textColor="?android:textColorPrimary" />
+
+        <TextView
+            android:id="@+id/txtSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/roboto_black"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/signin"
+            android:textAllCaps="true"
+            android:textColor="@color/purple_700" />
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:layout_centerInParent="true" />
+
+
+
+
+</RelativeLayout>

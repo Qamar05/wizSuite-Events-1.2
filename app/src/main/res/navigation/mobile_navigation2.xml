@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@+id/navigation_flight">
+
+    <fragment
+        android:id="@+id/navigation_flight"
+        android:name="com.wizsuite.event.ui.flight.FlightFragment"
+        android:label="@string/flight"
+        tools:layout="@layout/fragment_flight" />
+
+    <fragment
+        android:id="@+id/navigation_cab"
+        android:name="com.wizsuite.event.ui.cab.CabFragment"
+        android:label="@string/cab"
+        tools:layout="@layout/fragment_cab" />
+
+    <fragment
+        android:id="@+id/navigation_agenda"
+        android:name="com.wizsuite.event.ui.agenda.AgendaFragment"
+        android:label="@string/agenda"
+        tools:layout="@layout/fragment_agenda" />
+
+    <fragment
+        android:id="@+id/navigation_venue"
+        android:name="com.wizsuite.event.ui.venue.VenueFragment"
+        android:label="@string/venue"
+        tools:layout="@layout/fragment_venue" />
+    <fragment
+        android:id="@+id/navigation_contact"
+        android:name="com.wizsuite.event.ui.contact.ContactFragment"
+        android:label="@string/contact"
+        tools:layout="@layout/fragment_contact" />
+</navigation>

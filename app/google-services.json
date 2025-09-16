@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "570471335390",
+    "project_id": "wizsuite-event",
+    "storage_bucket": "wizsuite-event.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570471335390:android:7d025d749df1346903094f",
+        "android_client_info": {
+          "package_name": "com.wizsuite.event"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "570471335390-09r2pi7dn75igqrr2s2l75u73jgfpg5v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIRiTQrkvshIBJ4brqwnZ-AP5rgbviLxc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "570471335390-09r2pi7dn75igqrr2s2l75u73jgfpg5v.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "570471335390-luimlonmob6a8viv9o24sd65a5kh90cp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.wizsuite.events",
+                "app_store_id": "6446313108"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
