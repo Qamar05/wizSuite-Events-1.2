@@ -17,8 +17,8 @@ android {
         applicationId = "com.wizsuite.event"
         minSdk = 24
         targetSdk = 35
-        versionCode = 6
-        versionName = "1.2.16"
+        versionCode = 7
+        versionName = "1.2.17"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
